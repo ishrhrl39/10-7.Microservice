@@ -1,0 +1,506 @@
+2023-06-25T10:58:21.013+09:00  INFO [item-service,,] 4220 --- [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "local"
+2023-06-25T10:58:23.707+09:00  INFO [item-service,,] 4220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25T10:58:24.107+09:00  INFO [item-service,,] 4220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 356 ms. Found 1 JPA repository interfaces.
+2023-06-25T10:58:24.691+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6968d6ba-2e3a-3a3f-9e42-bc6f1e0f88bf
+2023-06-25T10:58:24.841+09:00  INFO [item-service,,] 4220 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.msa.item.feign.HistoryFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-25T10:58:25.564+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-25T10:58:25.575+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-25T10:58:25.576+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-25T10:58:25.754+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-25T10:58:25.754+09:00  INFO [item-service,,] 4220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4596 ms
+2023-06-25T10:58:26.770+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-25T10:58:26.878+09:00  INFO [item-service,,] 4220 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-06-25T10:58:27.411+09:00  WARN [item-service,,] 4220 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-25T10:58:27.647+09:00  INFO [item-service,,] 4220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-25T10:58:27.735+09:00  INFO [item-service,,] 4220 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@45c010fb
+2023-06-25T10:58:27.738+09:00  INFO [item-service,,] 4220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-25T10:58:27.802+09:00  INFO [item-service,,] 4220 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-25T10:58:27.802+09:00  WARN [item-service,,] 4220 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-25T10:58:29.764+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25T10:58:29.850+09:00  INFO [item-service,,] 4220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T10:58:29.871+09:00  WARN [item-service,,] 4220 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMQConfig': Injection of autowired dependencies failed
+2023-06-25T10:58:29.872+09:00  INFO [item-service,,] 4220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T10:58:29.888+09:00  INFO [item-service,,] 4220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-25T10:58:29.892+09:00  INFO [item-service,,] 4220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-25T10:58:30.893+09:00  WARN [item-service,,] 4220 --- [restartedMain] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2023-06-25T10:58:30.894+09:00  INFO [item-service,,] 4220 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-25T10:58:30.917+09:00  INFO [item-service,,] 4220 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-25T10:58:30.963+09:00 ERROR [item-service,,] 4220 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMQConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.msa.item.ItemServiceApplication.main(ItemServiceApplication.java:12) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.2.jar:3.0.2]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'activemq.broker.url' in value "${activemq.broker.url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.4.jar:6.0.4]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.4.jar:6.0.4]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.4.jar:6.0.4]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 22 common frames omitted
+
+2023-06-25T10:59:11.998+09:00  INFO [item-service,,] 12320 --- [restartedMain] org.msa.item.ItemServiceApplication      : The following 1 profile is active: "local"
+2023-06-25T10:59:13.041+09:00  INFO [item-service,,] 12320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25T10:59:13.193+09:00  INFO [item-service,,] 12320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2023-06-25T10:59:13.505+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6968d6ba-2e3a-3a3f-9e42-bc6f1e0f88bf
+2023-06-25T10:59:13.572+09:00  INFO [item-service,,] 12320 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.msa.item.feign.HistoryFeignClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-25T10:59:14.111+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-06-25T10:59:14.120+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-25T10:59:14.121+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-25T10:59:14.221+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-25T10:59:14.221+09:00  INFO [item-service,,] 12320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2205 ms
+2023-06-25T10:59:14.740+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-25T10:59:14.795+09:00  INFO [item-service,,] 12320 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-06-25T10:59:14.992+09:00  WARN [item-service,,] 12320 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-06-25T10:59:15.115+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-25T10:59:15.192+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@36b810b8
+2023-06-25T10:59:15.194+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-25T10:59:15.215+09:00  INFO [item-service,,] 12320 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-25T10:59:15.215+09:00  WARN [item-service,,] 12320 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-25T10:59:16.363+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25T10:59:16.373+09:00  INFO [item-service,,] 12320 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T10:59:17.366+09:00  WARN [item-service,,] 12320 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25T10:59:17.574+09:00  WARN [item-service,,] 12320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-06-25T10:59:17.631+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'history-service' URL not provided. Will try picking an instance via load-balancing.
+2023-06-25T10:59:20.226+09:00  INFO [item-service,,] 12320 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-06-25T10:59:20.329+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2023-06-25T10:59:20.452+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2256 (http) with context path ''
+2023-06-25T10:59:20.453+09:00  INFO [item-service,,] 12320 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 2256
+2023-06-25T10:59:20.457+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-06-25T10:59:20.496+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-06-25T10:59:20.501+09:00  INFO [item-service,,] 12320 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T10:59:20.525+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-06-25T10:59:20.526+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-06-25T10:59:20.633+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-06-25T10:59:20.636+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-06-25T10:59:20.638+09:00  INFO [item-service,,] 12320 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-25T10:59:20.643+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1687658360642 with initial instances count: 2
+2023-06-25T10:59:20.646+09:00  INFO [item-service,,] 12320 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ITEM-SERVICE with eureka with status UP
+2023-06-25T10:59:20.647+09:00  INFO [item-service,,] 12320 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1687658360647, current=UP, previous=STARTING]
+2023-06-25T10:59:20.648+09:00  INFO [item-service,,] 12320 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9:cb08cc80f528858c05f78836c4af3619: registering service...
+2023-06-25T10:59:20.713+09:00  INFO [item-service,,] 12320 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9:cb08cc80f528858c05f78836c4af3619 - registration status: 204
+2023-06-25T10:59:20.807+09:00  INFO [item-service,,] 12320 --- [restartedMain] org.msa.item.ItemServiceApplication      : Started ItemServiceApplication in 10.26 seconds (process running for 11.196)
+2023-06-25T11:04:20.542+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:09:20.553+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:14:20.555+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:19:20.560+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:24:20.567+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:29:20.573+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:34:20.593+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:39:20.608+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:44:20.622+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:49:20.632+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:54:20.640+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:59:20.655+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:04:20.662+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:09:20.677+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:14:20.687+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:19:20.695+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:24:20.710+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:29:20.720+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:34:20.727+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:39:20.736+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:44:20.745+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:49:20.758+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:54:20.774+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:59:20.783+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:04:20.795+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:09:20.797+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:14:20.811+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:19:20.821+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:24:20.833+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:29:20.841+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:34:20.846+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:39:20.857+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:44:20.862+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:49:20.875+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:54:20.888+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:59:20.892+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:04:20.902+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:09:20.911+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:14:20.915+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:19:20.919+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:24:20.921+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:29:20.928+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:34:20.944+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:39:20.961+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:44:20.968+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:49:20.978+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:54:20.991+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:59:20.999+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:04:21.008+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:09:21.021+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:14:21.034+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:19:21.047+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:24:21.051+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:29:21.066+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:34:21.074+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:39:21.078+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:44:21.086+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:49:21.098+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:54:21.110+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:59:21.116+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:04:21.126+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:09:21.128+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:14:21.139+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:19:21.145+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:24:21.155+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:29:21.170+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:34:21.172+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:39:21.175+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:44:21.191+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:49:21.205+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:54:21.217+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:59:21.227+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:04:21.233+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:09:21.238+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:14:21.250+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:19:21.254+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:24:21.264+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:29:21.277+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:34:21.280+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:39:21.294+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:44:21.302+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:49:21.309+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:54:21.312+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:59:21.318+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:04:21.331+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:09:21.335+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:14:21.339+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:19:21.344+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:21:09.662+09:00  INFO [item-service,,] 12320 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-25T18:21:09.747+09:00  INFO [item-service,,] 12320 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-25T18:21:10.719+09:00  INFO [item-service,,] 12320 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 937 ms
+2023-06-25T18:21:12.467+09:00  WARN [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.msa.item.controller.ItemController
+2023-06-25T18:21:12.624+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] org.msa.item.controller.ItemController   : accountId = admin
+2023-06-25T18:21:13.891+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-06-25T18:21:13.967+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-06-25T18:21:14.183+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.3.2
+2023-06-25T18:21:14.183+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: b66af662e61082cb
+2023-06-25T18:21:14.184+09:00  INFO [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1687684874181
+2023-06-25T18:21:14.983+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:15.009+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:15.009+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:15.112+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:15.112+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:15.112+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:15.276+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:15.277+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:15.277+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:15.442+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:15.442+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:15.442+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:15.912+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:15.912+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:15.912+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:16.866+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:16.866+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:16.866+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:18.000+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:18.001+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:18.001+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:18.953+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:18.953+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:18.953+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:20.091+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:20.091+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:20.092+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:21.236+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:21.236+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:21.236+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:22.426+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:22.426+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:22.426+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:23.621+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:23.621+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:23.621+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:24.517+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:24.518+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:24.518+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:25.418+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:25.419+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:25.419+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:26.620+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:26.621+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:26.621+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:27.449+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:27.450+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:27.450+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:28.611+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:28.612+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:28.612+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:29.638+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:29.638+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:29.638+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:30.767+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:30.768+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:30.768+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:31.962+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:31.962+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:31.962+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:33.060+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:33.060+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:33.060+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:33.955+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:33.957+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:33.957+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:34.970+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:34.970+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:34.970+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:35.984+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:35.985+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:35.985+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:37.061+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:37.062+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:37.062+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:38.074+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:38.074+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:38.074+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:39.209+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:39.209+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:39.210+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:40.288+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:40.288+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:40.288+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:41.180+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:41.180+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:41.180+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:42.070+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:42.071+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:42.071+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:43.086+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:43.086+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:43.086+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:43.919+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:43.920+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:43.920+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:44.872+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:44.872+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:44.883+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:45.962+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:45.962+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:45.962+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:46.910+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:46.911+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:46.911+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:47.738+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:47.738+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:47.739+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:48.635+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:48.636+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:48.636+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:49.761+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:49.762+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:49.762+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:50.590+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:50.591+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:50.591+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:51.479+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:51.480+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:51.480+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:52.554+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:52.554+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:52.554+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:53.442+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:53.442+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:53.442+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:54.629+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:54.630+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-06-25T18:21:54.630+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:56.004+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:56.006+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight API_VERSIONS request with correlation id 0 due to node -1 being disconnected (elapsed time since creation: 263ms, elapsed time since send: 263ms, request timeout: 30000ms)
+2023-06-25T18:21:56.006+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:56.918+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:56.919+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight API_VERSIONS request with correlation id 1 due to node -1 being disconnected (elapsed time since creation: 3ms, elapsed time since send: 3ms, request timeout: 30000ms)
+2023-06-25T18:21:56.919+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:57.933+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:21:57.934+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight API_VERSIONS request with correlation id 2 due to node -1 being disconnected (elapsed time since creation: 1ms, elapsed time since send: 1ms, request timeout: 30000ms)
+2023-06-25T18:21:57.934+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-06-25T18:21:59.499+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {item-hist=UNKNOWN_TOPIC_OR_PARTITION}
+2023-06-25T18:21:59.520+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: tmuw1lzdQ36tDk5c15KxgQ
+2023-06-25T18:21:59.522+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2000 with epoch 0
+2023-06-25T18:21:59.744+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {item-hist=LEADER_NOT_AVAILABLE}
+2023-06-25T18:21:59.930+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 8 : {item-hist=LEADER_NOT_AVAILABLE}
+2023-06-25T18:22:00.032+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 9 : {item-hist=UNKNOWN_TOPIC_OR_PARTITION}
+2023-06-25T18:22:00.135+09:00  WARN [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Error while fetching metadata with correlation id 10 : {item-hist=UNKNOWN_TOPIC_OR_PARTITION}
+2023-06-25T18:22:00.293+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition item-hist-0 to 0 since the associated topicId changed from null to UCQn5kgHRYSbFbSya_aBaw
+2023-06-25T18:22:00.529+09:00 DEBUG [item-service,649806f24b3f812c77d3c022ad3389b9,c4f6918cee85dba8] 12320 --- [http-nio-auto-1-exec-1] org.msa.item.controller.ItemController   : request add item id = 1
+2023-06-25T18:24:21.349+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:29:21.359+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:31:00.305+09:00  INFO [item-service,,] 12320 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-06-25T18:34:21.367+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:39:21.380+09:00  INFO [item-service,,] 12320 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:41:32.470+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(472)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:32.470+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(476)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:32.470+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(473)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:32.470+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:32.470+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(474)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:32.689+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ITEM-SERVICE with eureka with status DOWN
+2023-06-25T18:41:32.689+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1687686092689, current=DOWN, previous=UP]
+2023-06-25T18:41:32.771+09:00  INFO [item-service,,] 12320 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9:cb08cc80f528858c05f78836c4af3619: registering service...
+2023-06-25T18:41:32.994+09:00  INFO [item-service,,] 12320 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9:cb08cc80f528858c05f78836c4af3619 - registration status: 204
+2023-06-25T18:41:35.069+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-25T18:41:35.103+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-25T18:41:35.545+09:00  WARN [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [kafka-producer-network-thread | producer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/sun.nio.ch.WEPoll.wait(Native Method)
+ java.base@17.0.4.1/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+ java.base@17.0.4.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.4.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//org.apache.kafka.common.network.Selector.select(Selector.java:873)
+ app//org.apache.kafka.common.network.Selector.poll(Selector.java:465)
+ app//org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:560)
+ app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:328)
+ app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-06-25T18:41:35.546+09:00  WARN [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [micrometer-kafka-metrics] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-06-25T18:41:35.568+09:00  WARN [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender@7b8d5f19}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ app//zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ app//zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-06-25T18:41:35.670+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-06-25T18:41:35.673+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2023-06-25T18:41:35.674+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-06-25T18:41:35.674+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2023-06-25T18:41:35.674+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2023-06-25T18:41:35.744+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T18:41:35.961+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-25T18:41:35.974+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-25T18:41:36.135+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-06-25T18:41:39.139+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-06-25T18:41:39.195+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/DESKTOP-4VPH1H9:cb08cc80f528858c05f78836c4af3619 - deregister  status: 200
+2023-06-25T18:41:39.216+09:00  INFO [item-service,,] 12320 --- [RMI TCP Connection(475)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

@@ -1,0 +1,237 @@
+2023-06-25T10:57:25.721+09:00  INFO 14924 --- [restartedMain] o.m.a.AuthenticationServerApplication    : The following 1 profile is active: "local"
+2023-06-25T10:57:26.601+09:00  INFO 14924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25T10:57:27.362+09:00  INFO 14924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 720 ms. Found 1 JPA repository interfaces.
+2023-06-25T10:57:27.946+09:00  INFO 14924 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=13b49fdf-fd83-301b-882e-e9f9152a493d
+2023-06-25T10:57:30.035+09:00  INFO 14924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8900 (http)
+2023-06-25T10:57:30.047+09:00  INFO 14924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-25T10:57:30.047+09:00  INFO 14924 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-06-25T10:57:30.314+09:00  INFO 14924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-25T10:57:30.315+09:00  INFO 14924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4575 ms
+2023-06-25T10:57:31.299+09:00  INFO 14924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-25T10:57:31.812+09:00  INFO 14924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-25T10:57:34.601+09:00  INFO 14924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-25T10:57:35.122+09:00  INFO 14924 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@45391093
+2023-06-25T10:57:35.125+09:00  INFO 14924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-25T10:57:35.197+09:00  INFO 14924 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-06-25T10:57:35.199+09:00  WARN 14924 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-06-25T10:57:38.127+09:00  WARN 14924 --- [restartedMain] o.m.jdbc.message.server.ErrorPacket      : Error: 1050-42S01: Table 'account' already exists
+2023-06-25T10:57:38.128+09:00  WARN 14924 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    create table account (
+       account_id varchar(30) not null,
+        pass_wd varchar(100),
+        token varchar(500),
+        primary key (account_id)
+    ) engine=InnoDB" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    create table account (
+       account_id varchar(30) not null,
+        pass_wd varchar(100),
+        token varchar(500),
+        primary key (account_id)
+    ) engine=InnoDB" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:502) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:486) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:363) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:176) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:128) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:254) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:336) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1423) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.msa.authentication.AuthenticationServerApplication.main(AuthenticationServerApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.4.jar:3.0.4]
+Caused by: java.sql.SQLSyntaxErrorException: (conn=9) Table 'account' already exists
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:282) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:370) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:134) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:855) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:794) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:713) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:637) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.Statement.executeInternal(Statement.java:941) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.Statement.execute(Statement.java:1067) ~[mariadb-java-client-3.1.2.jar:na]
+	at org.mariadb.jdbc.Statement.execute(Statement.java:458) ~[mariadb-java-client-3.1.2.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	... 41 common frames omitted
+
+2023-06-25T10:57:38.158+09:00  INFO 14924 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25T10:57:38.169+09:00  INFO 14924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T10:57:39.145+09:00  WARN 14924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25T10:57:39.800+09:00  INFO 14924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-25T10:57:39.973+09:00  INFO 14924 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-06-25T10:57:40.370+09:00  INFO 14924 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-06-25T10:57:40.421+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-06-25T10:57:40.443+09:00  INFO 14924 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T10:57:40.487+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-06-25T10:57:40.488+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-06-25T10:57:41.592+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-06-25T10:57:41.594+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-06-25T10:57:41.597+09:00  INFO 14924 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-25T10:57:41.602+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1687658261601 with initial instances count: 0
+2023-06-25T10:57:41.605+09:00  INFO 14924 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHENTICATION-SERVER with eureka with status UP
+2023-06-25T10:57:41.605+09:00  INFO 14924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1687658261605, current=UP, previous=STARTING]
+2023-06-25T10:57:41.607+09:00  INFO 14924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHENTICATION-SERVER/DESKTOP-4VPH1H9:authentication-server:8900: registering service...
+2023-06-25T10:57:41.630+09:00  INFO 14924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8900 (http) with context path ''
+2023-06-25T10:57:41.631+09:00  INFO 14924 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8900
+2023-06-25T10:57:41.721+09:00  INFO 14924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHENTICATION-SERVER/DESKTOP-4VPH1H9:authentication-server:8900 - registration status: 204
+2023-06-25T10:57:41.806+09:00  INFO 14924 --- [restartedMain] o.m.a.AuthenticationServerApplication    : Started AuthenticationServerApplication in 17.954 seconds (process running for 19.269)
+2023-06-25T10:58:11.602+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-06-25T10:58:11.603+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-06-25T10:58:11.831+09:00  INFO 14924 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-06-25T11:02:40.492+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:07:40.497+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:12:40.502+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:17:40.516+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:22:40.525+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:27:40.540+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:32:40.553+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:37:40.568+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:42:40.569+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:47:40.579+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:52:40.590+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T11:57:40.595+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:02:40.608+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:07:40.615+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:12:40.624+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:17:40.634+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:22:40.647+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:27:40.650+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:32:40.664+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:37:40.678+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:42:40.680+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:47:40.689+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:52:40.691+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T12:57:40.696+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:02:40.711+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:07:40.723+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:12:40.732+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:17:40.736+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:22:40.737+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:27:40.745+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:32:40.760+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:37:40.774+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:42:40.787+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:47:40.799+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:52:40.813+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T13:57:40.820+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:02:40.822+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:07:40.824+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:12:40.830+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:17:40.840+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:22:40.841+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:27:40.851+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:32:40.856+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:37:40.876+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:42:40.891+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:47:40.901+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:52:40.916+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T14:57:40.925+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:02:40.928+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:07:40.931+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:12:40.937+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:17:40.940+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:22:40.953+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:27:40.966+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:32:40.971+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:37:40.974+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:42:40.991+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:47:40.992+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:52:41.006+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T15:57:41.014+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:02:41.016+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:07:41.032+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:12:41.037+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:17:41.040+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:22:41.056+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:27:41.065+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:32:41.076+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:37:41.085+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:42:41.092+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:47:41.107+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:52:41.108+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T16:57:41.123+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:02:41.135+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:07:41.139+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:12:41.144+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:17:41.149+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:22:41.153+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:27:41.160+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:32:41.162+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:37:41.164+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:42:41.168+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:47:41.171+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:52:41.183+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T17:57:41.192+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:02:41.201+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:07:41.201+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:12:41.204+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:16:20.928+09:00  INFO 14924 --- [http-nio-8900-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-25T18:16:20.929+09:00  INFO 14924 --- [http-nio-8900-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-25T18:16:20.948+09:00  INFO 14924 --- [http-nio-8900-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2023-06-25T18:16:22.079+09:00 DEBUG 14924 --- [http-nio-8900-exec-2] o.m.a.c.AuthenticationController         : join.account.id = admin
+2023-06-25T18:16:25.502+09:00 DEBUG 14924 --- [http-nio-8900-exec-3] o.m.a.c.AuthenticationController         : token.account.id = admin
+2023-06-25T18:17:41.206+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:22:41.210+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:27:41.226+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:32:41.240+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:37:41.243+09:00  INFO 14924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-06-25T18:41:36.728+09:00  INFO 14924 --- [RMI TCP Connection(470)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:36.728+09:00  INFO 14924 --- [RMI TCP Connection(471)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:36.728+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-06-25T18:41:37.057+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHENTICATION-SERVER with eureka with status DOWN
+2023-06-25T18:41:37.058+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1687686097058, current=DOWN, previous=UP]
+2023-06-25T18:41:37.133+09:00  INFO 14924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHENTICATION-SERVER/DESKTOP-4VPH1H9:authentication-server:8900: registering service...
+2023-06-25T18:41:37.621+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-25T18:41:37.710+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-25T18:41:37.779+09:00  INFO 14924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHENTICATION-SERVER/DESKTOP-4VPH1H9:authentication-server:8900 - registration status: 204
+2023-06-25T18:41:38.438+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25T18:41:38.745+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-25T18:41:38.776+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-25T18:41:38.799+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-06-25T18:41:41.800+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-06-25T18:41:41.989+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHENTICATION-SERVER/DESKTOP-4VPH1H9:authentication-server:8900 - deregister  status: 200
+2023-06-25T18:41:42.083+09:00  INFO 14924 --- [RMI TCP Connection(466)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
